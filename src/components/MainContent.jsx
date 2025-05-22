@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './MainContent.css';
-import Spiral from '../assets/images/spiral.png';
+import Spiral from '../assets/images/Spiral.png';
 
 const MainContent = ({ children }) => {
   return (
