@@ -1,6 +1,14 @@
+
+@font-face {
+  font-family: 'TTTravels';
+  src: url('project/src/assets/fonts/TTTravels-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 .location-card {
-  width: 240px;
-  height: 80px;
+  width: 270px;
+  height: 90px;
   background-color: rgba(13, 17, 23, 0.9);
   padding: var(--spacing-md);
   display: flex;
@@ -29,7 +37,7 @@
 }
 
 .location-code {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--color-secondary);
   font-weight: 600;
   letter-spacing: 1px;
@@ -39,10 +47,12 @@
 }
 
 .location-name {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 100;
   margin: 0;
   position: relative;
   z-index: 2;
   color: rgba(255, 255, 255, 0.9);
+   font-family: 'TTTravels';
+   
 }

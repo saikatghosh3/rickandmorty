@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'TTTravelsBlackItalic';
+  src: url('./assets/fonts/TTTravels-BlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+
 .hero {
   position: relative;
   min-height: 500px;
@@ -21,13 +31,12 @@
 .hero-title{
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 5px;
+font-family: 'TTTravelsBlackItalic', sans-serif;
  
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 1000px;
   position: relative;
   z-index: 2;
   color: white;
@@ -38,13 +47,14 @@
 }
 
 .hero-logo {
-  width: 220px;
+  width: 200px;
   margin-bottom: 1rem;
 }
 
 .hero-bubble {
-  width: 100px;
+  width: 200px;
   margin-bottom: 2rem;
+  margin-left: 1rem;
 
 }
 
@@ -65,17 +75,20 @@
 }
 
 .hero-title-highlight {
-  color: var(--color-secondary);
-  text-shadow: 0 0 15px rgba(0, 232, 252, 0.7);
-}
-
-.hero-title-highlight.morty {
   color: var(--color-primary);
   text-shadow: 0 0 15px rgba(122, 229, 130, 0.7);
 }
 
+.hero-title-highlight .morty {
+  color: var(--color-primary);
+  text-shadow: 0 0 15px rgba(122, 229, 130, 0.7);
+  margin-left: 1rem;
+ 
+}
+
 .hero-title-last {
   letter-spacing: 3px;
+ 
 }
 
 .hero-portal {
@@ -85,7 +98,7 @@
 
 .hero-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   margin-top: var(--spacing-xl);
@@ -102,6 +115,7 @@
 
 .hero-button {
   flex-shrink: 0;
+  margin-left: 4rem;
 }
 
 @media (max-width: 1024px) {

@@ -18,7 +18,8 @@
 
 .view-all-link {
   margin-right: 5rem;
-  width: 100px;
+  width: 120px;
+  height: 40px;
   font-size: 0.9rem;
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--spacing-sm);
@@ -27,6 +28,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgb(6, 179, 35);
+  
 }
 
 .view-all-link:hover {
