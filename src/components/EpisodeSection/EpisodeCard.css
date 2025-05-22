@@ -1,6 +1,23 @@
+@font-face {
+  font-family: 'TTTravels';
+  src: url('./assets/fonts/TTTravels-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTTravels';
+  src: url('./assets/fonts/TTTravels-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+
 .episode-card {
-  width: 240px;
-  height: 80px;
+  width: 270px;
+  height: 90px;
   background-color: rgba(13, 17, 23, 0.9);
   padding: var(--spacing-md);
   display: flex;
@@ -37,7 +54,8 @@
 }
 
 .episode-name {
-  font-size: 1rem;
+  font-family:'TTTravels' ;
+  font-size: 48;
   font-weight: 400;
   margin: 0;
   position: relative;

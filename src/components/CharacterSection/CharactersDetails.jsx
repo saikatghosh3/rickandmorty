@@ -39,10 +39,12 @@ const CharacterDetails = () => {
 
       <div className="logo-wrapper">
         <Link to="/">
-          <img src={Logo} alt="Home" style={{ width: '150px', cursor: 'pointer' }} />
+          <img src={Logo} alt="Home" style={{ width: '200px', cursor: 'pointer' }} />
         </Link>
       </div>
       <div className="character-detail-container">
+
+        {/* left section  */}
         <div className="left-section">
           <h2 className="character-name">{character.name}</h2>
           <div className="character-img-box">
@@ -52,31 +54,31 @@ const CharacterDetails = () => {
         </div>
         <div className="vertical-line"></div>
 
-         
+         {/* right section detail */}
         <div className="right-section">
           <div className="card-row">
-            <div className="info-card"><FaHeart /> <span>Status: </span><span> {character.status}</span></div>
-            <div className="info-card"><GiChemicalDrop /> <span>Species: </span><span>{character.species}</span></div>
-            <div className="info-card"><FaMars /> <span>Gender: </span> <span>{character.gender}</span></div>
+            <div className="info-card"><FaHeart className='my-icon' /> <span>Status: </span><span> {character.status}</span></div>
+            <div className="info-card"><GiChemicalDrop className='my-icon'  /> <span>Species: </span><span>{character.species}</span></div>
+            <div className="info-card"><FaMars className='my-icon'  /> <span>Gender: </span> <span>{character.gender}</span></div>
           </div>
           <div className='info-box1'> 
           <div className="info-box">
-            <FaGlobe />
+            <FaGlobe className='my-icon'  />
             <span>Origin: </span><span> {character.origin.name}</span>
             </div>
-            <HiOutlineExternalLink />
+            <HiOutlineExternalLink className='my-icon'  />
           </div>
              <div className="info-box1">
           <div className="info-box">
-            <FaUserAlt />
+            <FaUserAlt className='my-icon'  />
             <span>Last Known Location : </span> <span>{character.location.name}</span>
             </div>
-            <HiOutlineExternalLink />
+            <HiOutlineExternalLink className='my-icon'  />
           </div>
 
           <div className="episode-box">
             <div className="episode-title">
-              <MdFormatListBulleted />
+              <MdFormatListBulleted className='my-icon'  />
               <span>Episode(s)</span>
             </div>
             <ul>

@@ -47,12 +47,10 @@
 }
 
 .location-name {
-  font-size: 2rem;
-  font-weight: 100;
-  margin: 0;
   position: relative;
   z-index: 2;
   color: rgba(255, 255, 255, 0.9);
    font-family: 'TTTravels';
+   font-size: 1.2rem;
    
 }

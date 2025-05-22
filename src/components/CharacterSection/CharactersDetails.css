@@ -8,7 +8,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* kaj koa lagbe  */
+
 
 
 
@@ -20,7 +20,7 @@
   position: relative;
 }
 
-
+ /* for background image  */
 .hero-background {
   position: fixed;
   inset: 0;
@@ -164,6 +164,12 @@ flex-direction: column;
   margin-bottom: 5px;
   color: #ddd;
 }
+.my-icon{
+color: #00ffee;
+font-size: 20px;
+}
+ 
+/* Rsponsive design  */
 
 @media (max-width: 768px) {
   .character-detail-container {
