@@ -1,0 +1,84 @@
+.character-card {
+  width: 200px;
+  height: 230px;
+  background-color: rgba(13, 17, 23, 0.9);
+  position: relative;
+  flex-shrink: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+  border: 2px solid rgba(122, 229, 130, 0.7);
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(122, 229, 130, 0.3);
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(122, 229, 130, 0.6);
+}
+
+.character-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, transparent 50%, rgba(13, 17, 23, 0.9) 50%);
+}
+
+.character-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: block;
+}
+
+.character-info {
+  padding: 5px 8px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(122, 229, 130, 0.3);
+  border-radius: 0 0 8px 8px;
+}
+
+.character-info h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(122, 229, 130, 0.9);
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 3px rgba(122, 229, 130, 0.6);
+}
+
+
+@media (max-width: 600px) {
+  .character-card {
+    width: 150px;
+    height: 200px;
+  }
+
+  .character-image-container {
+    height: 140px;
+  }
+
+  .character-info h3 {
+    font-size: 0.8rem;
+  }
+}

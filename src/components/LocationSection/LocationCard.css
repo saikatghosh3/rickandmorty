@@ -1,0 +1,48 @@
+.location-card {
+  width: 240px;
+  height: 80px;
+  background-color: rgba(13, 17, 23, 0.9);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  flex-shrink: 0;
+ 
+   clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+
+  border: 1px solid rgba(0, 232, 252, 0.3);
+  z-index: 2;
+}
+
+.location-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13, 17, 23, 0.9) 0%, rgba(0, 232, 252, 0.1) 100%);
+  z-index: 1;
+}
+
+.location-card:hover {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 15px rgba(0, 232, 252, 0.2);
+}
+
+.location-code {
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-xs);
+  position: relative;
+  z-index: 2;
+}
+
+.location-name {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.9);
+}

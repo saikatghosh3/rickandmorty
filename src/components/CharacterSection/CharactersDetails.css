@@ -1,0 +1,182 @@
+
+.character-detail-page {
+  padding: 2rem;
+  color: white;
+  background: linear-gradient(to right, #0f1117, #1a1f2e);
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* kaj koa lagbe  */
+
+
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+
+.hero-background {
+  position: fixed;
+  inset: 0;
+  background-image: url('../../assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+
+.brand-title {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #b6ff00;
+  margin-bottom: 2rem;
+}
+
+.character-detail-container {
+  margin-top: 7rem;
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+ 
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  margin-top: 2rem;
+  flex: 1;
+  text-align: center;
+   align-items: center;
+  justify-content: center;
+  
+}
+
+.character-name {
+  font-size: 1.5rem;
+  color: #00e6ff;
+  margin-bottom: 1rem;
+}
+
+.character-img-box {
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+ 
+}
+
+.character-img-box img {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.vertical-line {
+  width: 100px;
+  background-color: #0774e9;
+  margin-left: 5rem;
+  border-radius: 1px;
+}
+
+
+.right-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+ flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+  min-height: 100px;
+  flex: 1;
+}
+
+.info-box1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 200, 255, 0.05);
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  padding: 12px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.info-box {
+display: flex;
+flex-direction: column;
+
+}
+
+.episode-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+}
+
+.episode-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #00ffee;
+}
+
+.episode-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.episode-box li {
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .character-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-row {
+    flex-direction: column;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

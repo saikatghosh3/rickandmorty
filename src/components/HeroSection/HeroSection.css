@@ -1,0 +1,162 @@
+.hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-xl) 0 var(--spacing-xxl);
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+.hero-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+ 
+}
+
+.hero-content {
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero-logo {
+  width: 220px;
+  margin-bottom: 1rem;
+}
+
+.hero-bubble {
+  width: 100px;
+  margin-bottom: 2rem;
+
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-title-first,
+.hero-title-highlight,
+.hero-title-last {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--color-text);
+  opacity: 0.9;
+}
+
+.hero-title-highlight {
+  color: var(--color-secondary);
+  text-shadow: 0 0 15px rgba(0, 232, 252, 0.7);
+}
+
+.hero-title-highlight.morty {
+  color: var(--color-primary);
+  text-shadow: 0 0 15px rgba(122, 229, 130, 0.7);
+}
+
+.hero-title-last {
+  letter-spacing: 3px;
+}
+
+.hero-portal {
+  width: 150px;
+  margin-left: 10px;
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: var(--spacing-xl);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero-description {
+  max-width: 450px;
+  font-size: 0.9rem;
+  color: rgba(41, 191, 99, 0.8);
+  text-align: center;
+}
+
+.hero-button {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-title-first,
+  .hero-title-highlight,
+  .hero-title-last {
+    font-size: 4rem;
+  }
+
+  .hero-portal {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .hero-title-first,
+  .hero-title-highlight,
+  .hero-title-last {
+    font-size: 2.5rem;
+  }
+
+  .hero-portal {
+    width: 60px;
+    margin-left: 0;
+  }
+
+  .hero-logo {
+    width: 180px;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-first,
+  .hero-title-highlight,
+  .hero-title-last {
+    font-size: 1.8rem;
+  }
+
+  .hero-logo {
+    width: 150px;
+  }
+
+  .hero-bubble {
+    width: 80px;
+  }
+
+  .hero-description {
+    font-size: 0.8rem;
+  }
+}
