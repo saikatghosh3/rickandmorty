@@ -3,7 +3,7 @@ import './HeroSection.css';
 import backgroundImage from '../../assets/images/background.png';
 import bubble from '../../assets/images/bubble.png';
 import portal from '../../assets/images/portal.png';
-import logo from '../../assets/images/Logo.png';
+import logo from '../../assets/images/logo.png';
 import Button from '../UI/Button/Button';
 
 const HeroSection = () => {
