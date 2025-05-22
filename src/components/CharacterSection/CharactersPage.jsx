@@ -19,13 +19,13 @@ const CharactersPage = () => {
     <div>
     
       <div
-        className="hero-background"
+        className="character-background"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 
       <div className="logo-wrapper">
         <Link to="/">
-          <img src={Logo} alt="Home" style={{ width: '150px', cursor: 'pointer' }} />
+          <img src={Logo} alt="Home" style={{ width: '250px', cursor: 'pointer' }} />
         </Link>
       </div>
 
