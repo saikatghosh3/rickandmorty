@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './HeroSection.css';
 import backgroundImage from '../../assets/images/background.png';
@@ -9,7 +10,6 @@ import Button from '../UI/Button/Button';
 const HeroSection = () => {
   return (
     <section className="hero">
-    
       <div
         className="hero-background"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -17,24 +17,26 @@ const HeroSection = () => {
 
       <div className="hero-content">
         <img src={logo} alt="Logo" className="hero-logo" />
-        
-         <div className="title">
-        <h2 className="hero-title">
-          <img src={bubble} alt="Bubble" className="hero-bubble" />
-          <span className="hero-title-first">
-            THE
-            <img src={portal} alt="Portal" className="hero-portal" />
-          </span>
-          <span className="hero-title-highlight">RICK</span></h2 >
+
+        <div className="title">
+          <div className="hero-title-row">
+            <div className="hero-bubble-text">
+              <img src={bubble} alt="Bubble" className="hero-bubble" />
+              <span className="hero-title-first">
+                THE
+                <img src={portal} alt="Portal" className="hero-portal" />
+              </span>
+            </div>
+            <span className="hero-title-highlight">RICK</span>
           </div>
-          <br />
-          <h2 className="hero-title">
-          <span className="hero-title-highlight morty">MORTY</span>
-          <span className="hero-title-last">WIKI</span>
-        </h2>
+
+          <div className="hero-title hero-title-bottom">
+            <span className="hero-title-highlight morty">MORTY</span>
+            <span className="hero-title-last">WIKI</span>
+          </div>
+        </div>
 
         <div className="hero-bottom">
-         
           <Button
             className="hero-button"
             icon="play"
@@ -45,7 +47,7 @@ const HeroSection = () => {
             Watch Now
           </Button>
 
-           <p className="hero-description">
+          <p className="hero-description">
             Brilliant but boozy scientist Rick hijacks his fretful teenage grandson, Morty, for wild escapades in other worlds and alternate dimensions.
           </p>
         </div>
